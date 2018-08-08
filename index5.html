@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>K R E W E - cart</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="script.js"> </script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+<div class="row">
+   <div class="col-md-2"> 
+    <button id="cart"> <a href="index5.html"> <img src="cart.jpg" id="cartimg"> </a>  
+       <a href="index6.html"> <img src="contact-01.png" id="contactimg"> 
+       </a>  
+    </button> 
+  </div>
+  <div class="col-md-3"> 
+ <form class="example" action="action_page.php"> 
+  <input type="text" placeholder="search . . ." name="search" id="search">
+ </form>
+  </div>
+
+
+ 
+
+</div>
+
+
+	<div class="row2"> 
+		 <button id="home"> <a href="index1.html"> <img src="krewe.jpg" id="krewelogo1" class="center"> </a> </button> 
+	
+	<div class="col-12 col-sm-6 my-new-class" id="SUN"> 
+
+		<div class="dropdown">
+  <button class="dropbtn">SUN</button>
+  <div class="dropdown-content">
+     <a href="index2.html">all</a>
+    <a href="index2.html">womens</a>
+    <a href="index2.html">mens</a>
+  </div>
+</div> 
+</div>
+	
+
+	<div class="col-12 col-sm-6 my-new-class" id="OPTICAL"> 
+		<div class="dropdown">
+  <button class="dropbtn"> OPTICAL </button>
+  <div class="dropdown-content">
+   <a href="index3.html">all</a>
+    <a href="index3.html">womens</a>
+    <a href="index3.html">mens</a>
+  </div>
+</div> 
+</div>
+<hr id="line1">
+</div> 
+
+<div class="row">
+
+  <div class="col-12 col-sm-4 my-new-class"> 
+    <div class="card" id="card1" [class.color1]="isSelected === 'color1'" (click)="setColor('color1')">
+    <h1> 1. shipping </h1> 
+    
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  
+
+ <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1"> send me updates pls!</label>
+  </div>
+<br><br>
+  <h1> shipping address </h1>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1"></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="first name">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1"></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="last name">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1"></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="street address">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1"></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="city">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1"></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="zip code">
+  </div>
+
+  <br><br>
+
+  <select>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District Of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+  <option value="HI">Hawaii</option>
+  <option value="ID">Idaho</option>
+  <option value="IL">Illinois</option>
+  <option value="IN">Indiana</option>
+  <option value="IA">Iowa</option>
+  <option value="KS">Kansas</option>
+  <option value="KY">Kentucky</option>
+  <option value="LA">Louisiana</option>
+  <option value="ME">Maine</option>
+  <option value="MD">Maryland</option>
+  <option value="MA">Massachusetts</option>
+  <option value="MI">Michigan</option>
+  <option value="MN">Minnesota</option>
+  <option value="MS">Mississippi</option>
+  <option value="MO">Missouri</option>
+  <option value="MT">Montana</option>
+  <option value="NE">Nebraska</option>
+  <option value="NV">Nevada</option>
+  <option value="NH">New Hampshire</option>
+  <option value="NJ">New Jersey</option>
+  <option value="NM">New Mexico</option>
+  <option value="NY">New York</option>
+  <option value="NC">North Carolina</option>
+  <option value="ND">North Dakota</option>
+  <option value="OH">Ohio</option>
+  <option value="OK">Oklahoma</option>
+  <option value="OR">Oregon</option>
+  <option value="PA">Pennsylvania</option>
+  <option value="RI">Rhode Island</option>
+  <option value="SC">South Carolina</option>
+  <option value="SD">South Dakota</option>
+  <option value="TN">Tennessee</option>
+  <option value="TX">Texas</option>
+  <option value="UT">Utah</option>
+  <option value="VT">Vermont</option>
+  <option value="VA">Virginia</option>
+  <option value="WA">Washington</option>
+  <option value="WV">West Virginia</option>
+  <option value="WI">Wisconsin</option>
+  <option value="WY">Wyoming</option>
+</select>
+  
+<br> <br> <br>
+
+
+  <a href="card2"> <button type="submit" class="btn btn-primary" id="cart_btn">next </button> </a>
+ 
+
+
+</form>
+</div>
+
+
+  </div>
+ 
+
+
+
+  <div class="col-12 col-sm-4 my-new-class">
+    <div class="card" id="card2" class="hidden" onclick="myFunction()"> 
+<h1> 2. delivery + payment </h1> 
+<br>
+      <select>
+  <option value="volvo">FREE - 3 DAY DELIVERY</option>
+  <option value="saab">$10.95 2 DAY DELIVERY</option>
+</select>
+
+<br><br>
+
+    <form>
+  <H1>payment</H1>
+  <div class="form-group">
+    <label for="exampleInputEmail1"></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="card number">
+  </div>
+
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">remember card</label>
+  </div>
+
+<br><br>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">expiration date</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="mm/yy">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1"></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="CVC">
+  </div> 
+
+  <div class="form-group">
+    <label for="exampleInputPassword1"></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="cardholders' name">
+  </div>
+
+
+
+  
+  <a href="card3"> <button type="submit" class="btn btn-primary" id="cart_btn" onclick="document.getElementbyID('card3').style.display='none">next</button> </a>
+ 
+
+</form>
+</div>
+</div>
+
+
+
+  <div class="col-12 col-sm-4 my-new-class"> 
+   <div class="card" id="card3"> 
+   <h1> 3. summary </h1> 
+   <div class="row">
+    <img src="lafitte.png" id="checkout_img">
+      <p class id="checkout_info">LAFITTE <br>
+        BLACK + ABSINTHE <br>
+        POLARIZED <br>
+        QUANTITY: 1
+      </p> 
+
+       
+</div>
+
+<hr id="line2"> 
+
+<div class="row"> 
+<p class id="checkout_info2"> sub total - $255</p>
+</div> 
+
+<div class="row"> 
+<p class id="checkout_info2"> tax - $18.95</p>
+</div> 
+
+<div class="row"> 
+<p class id="checkout_info2"> shipping - FREE</p>
+</div> 
+
+
+<hr id="line2">
+
+<div class="row"> 
+<p class id="checkout_info2"> total - 273.95 </p>
+
+<div class="popup" onclick="myFunction()" id="cart_btn2"> finish
+  <span class="popuptext" id="myPopup"> thank you for shopping with KREWE ! <br>keep <a href="index1.html"> shopping? </a> </span>
+</div> 
+
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+
+
+</div> 
+
+
+
+
+</div> 
+ 
+
+  </div>
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+</div>
+
+
+
+
+
+
+</body>
