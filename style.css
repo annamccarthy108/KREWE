@@ -196,9 +196,15 @@ form.example::after {
 	margin-left: 110px;
 	margin-right: 100px;
 	padding-bottom: 25px;
+	 -webkit-transition: margin 0.6s ease-out;
+    -moz-transition: margin 0.7s ease-out;
+    -o-transition: margin 0.7s ease-out;
 
-	
 } 
+
+#img1:hover{
+	margin-top: 15px;
+}
 
 #img3{
 	
@@ -209,7 +215,11 @@ form.example::after {
 	margin-top: 200px;
 	height: 90%;
 	width: 90%;
+	z-index: 5000;
+
+
 }
+
 
 
 
@@ -241,11 +251,27 @@ form.example::after {
 	font-size: 50px;
 	line-height: auto;
 	text-align: center;
-	color: black;
+	color: transparent;
+	 -webkit-transition: all 3.0s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
 }
+
+
+
 #tagline3:hover{
-	color: black;
+ line-height: 120px;
+ 	color: black;
+ 	visibility: visible;
+}
+
+.row4:hover #tagline3{
 	
+ 
+ display: block;
+ line-height: 133px;
+ 	color: black;
+ 	visibility: visible;
 }
 
 #picside{
@@ -260,8 +286,19 @@ form.example::after {
 	height: 250px;
 	width: 350px;
 	margin-top: 50px;
+	  -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
 	
 }
+
+#img2:hover{
+	margin-top: 0px;
+}
+
+
+
+
 
 #row3{
 	background-color: #FADAD3;
@@ -277,18 +314,6 @@ form.example::after {
 }
 
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-	display: block;
-	font-size: 20px;
-}
 
 
 
@@ -479,7 +504,7 @@ form.example::after {
     color: black;
 	font-size: 26px;
 	margin-bottom: 55px;
-	margin-top: 140px;
+	margin-top: 200px;
 
 
 }
@@ -510,8 +535,17 @@ form.example::after {
   opacity: 1.4;
     filter: alpha(opacity=50);
     margin-top: 50px;
+    	 -webkit-transition: margin 0.6s ease-out;
+    -moz-transition: margin 0.7s ease-out;
+    -o-transition: margin 0.7s ease-out;
 
+} 
+
+#contact_image:hover{
+	margin-top: 20px;
 }
+
+
 
 .middle {
   transition: .5s ease;
@@ -668,5 +702,19 @@ form.example::after {
 	text-align: center;
 }
 
+#email_btn{
+		border-radius: 12px;
+	padding: 5px;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	font-size: 15px;
+	border-width: 2px;
+	border-color: white;
+	color: black;
+	height: 50px;
+	width: 100px;
+	background-color: #ABAA7F;
+	margin-top: 25px;
+	text-align: center;
+}
 
 
